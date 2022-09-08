@@ -1,2 +1,0 @@
-# pawbuddy
-Laboratory activity remake

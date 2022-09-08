@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Patsy Sans";
+  src: url("./PatsySans.otf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FFFFEE;
+}
+
+h1, h2 {
+  font-family: "Patsy Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p, a, button, input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+button, #message-submit {
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.beige-part {
+  color: #384228;
+}
+
+.yellow-part, .yellow-btn {
+  border: 3px solid #E5B12B;
+  background-color: #E5B12B;
+  color: #FFFFEE;
+}
+
+.yellow-btn:hover {
+  background-color: #FFFFEE;
+  color: #E5B12B;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  margin: 2rem;
+}
+
+#header-logo {
+  width: 20vw;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 2rem;
+}
+#hero button {
+  margin: 2rem;
+}
+#hero .img-container {
+  width: 90vw;
+  height: 45vh;
+}/*# sourceMappingURL=style.css.map */
