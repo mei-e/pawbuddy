@@ -107,7 +107,7 @@ header {
 #about {
   flex-direction: column;
   gap: 4rem;
-  margin: 10rem 2rem;
+  margin: 10rem 2rem 2rem;
 }
 #about p {
   margin-top: 2rem;
@@ -115,6 +115,7 @@ header {
 
 #about-img {
   position: relative;
+  margin: 2rem;
 }
 #about-img .img-container {
   height: 85vw;
@@ -148,9 +149,141 @@ header {
 }
 
 .service-content .img-container {
-  height: 50vh;
+  height: 100vw;
+  width: 100vw;
 }
 
 .service-text {
+  padding: 6rem 4rem;
+}
+.service-text p {
+  margin-top: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   padding: 4rem;
+  text-align: center;
+}
+
+#soc-med {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+#soc-med img {
+  width: 20vw;
+  filter: invert(99%) sepia(100%) saturate(238%) hue-rotate(323deg) brightness(106%) contrast(103%);
+  opacity: 0.85;
+  transition: opacity 0.5s ease;
+}
+#soc-med img:hover {
+  opacity: 1;
+}
+
+#footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#notes {
+  text-align: left;
+}
+#notes a {
+  color: inherit;
+}
+
+@media screen and (min-width: 600px) {
+  h1, h2 {
+    line-height: 0.85;
+  }
+  h1 {
+    font-size: 6.4rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  p, a, button, input {
+    font-size: 2.4rem;
+  }
+  #header-logo {
+    width: 10vw;
+  }
+  #hero {
+    margin: 2rem;
+  }
+  #hero .img-container {
+    margin-top: 4rem;
+    width: 90vw;
+    height: 80vh;
+  }
+  #about {
+    flex-direction: row;
+    align-items: center;
+  }
+  #about-text {
+    width: 50vw;
+  }
+  #about-text p {
+    margin-top: 4rem;
+  }
+  #about-img {
+    width: 40vw;
+  }
+  #about-img .img-container {
+    height: 45vw;
+    width: 25vw;
+  }
+  #asset {
+    top: 37vw;
+    left: 10vw;
+    width: 20vw;
+  }
+  #services {
+    overflow: hidden;
+    margin-top: 10rem;
+  }
+  #services h1 {
+    margin-bottom: 6rem;
+  }
+  .service-content {
+    display: flex;
+    align-items: center;
+  }
+  .service-content .img-container {
+    height: 100vh;
+    width: 50vw;
+  }
+  .service-text {
+    width: 50vw;
+  }
+  .service-text p {
+    word-wrap: break-word;
+  }
+  .right-align-content {
+    flex-direction: row-reverse;
+  }
+  #soc-med {
+    gap: 4rem;
+  }
+  #soc-med img {
+    width: 7vw;
+  }
+  #footer-details {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  #footer-details p {
+    word-wrap: break-word;
+  }
+  .details {
+    width: 28vw;
+  }
 }/*# sourceMappingURL=style.css.map */

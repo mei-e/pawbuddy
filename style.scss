@@ -126,7 +126,7 @@ header{
 #about{
     flex-direction: column;
     gap:$medium-value;
-    margin: $extra-large-value $small-value;
+    margin: $extra-large-value $small-value $small-value;
     
     p{
         margin-top: $small-value;
@@ -135,6 +135,7 @@ header{
 
 #about-img{
     position: relative;
+    margin:$small-value;
     .img-container{
         height:85vw;
         width:55vw;
@@ -170,10 +171,160 @@ header{
 
 .service-content{
     .img-container{
-        height:50vh;
+        height:100vw;
+        width:100vw;
     }
 }
 
 .service-text{
+    padding:$large-value $medium-value;
+    p{
+        margin-top: $extra-small-value;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:$small-value;
     padding:$medium-value;
+    text-align: center;
+}
+
+#soc-med{
+    display: flex;
+    gap:$extra-small-value;
+    margin: $small-value 0;
+    img{
+        width:20vw;
+        filter: invert(99%) sepia(100%) saturate(238%) hue-rotate(323deg) brightness(106%) contrast(103%);
+        opacity: 0.85;
+        transition: opacity 0.5s ease;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+#footer-details{
+    display: flex;
+    flex-direction: column;
+    gap:$extra-small-value;
+}
+
+#notes{
+    text-align: left;
+    a{
+        color:inherit;
+
+    }
+}
+
+@media screen and (min-width:600px) {
+    h1,h2{
+        line-height: 0.85;
+    }
+    h1{
+        font-size: 6.4rem;
+    }
+    
+    h2{
+        font-size: 4.8rem;
+    }
+    
+    p,a,button,input{
+        font-size: 2.4rem;
+    }
+
+    #header-logo{
+        width:10vw;
+    }
+    
+    #hero{
+        margin:$small-value;
+    
+        .img-container{
+            margin-top: $medium-value;
+            width:90vw;
+            height:80vh;
+        }
+    }
+    
+    #about{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #about-text{
+        width: 50vw;
+        p{
+            margin-top: $medium-value;
+        }
+    }
+
+    #about-img{
+        width: 40vw;
+        .img-container{
+            height:45vw;
+            width:25vw;
+        }
+    }
+    
+    #asset{
+        top:37vw;
+        left:10vw;
+        width:20vw;
+    }
+    
+
+    #services{
+        overflow: hidden;
+        margin-top: $extra-large-value;
+        h1{
+            margin-bottom: $large-value;
+            
+        }
+    }
+    .service-content{
+        display: flex;
+        align-items: center;
+        .img-container{
+            height:100vh;
+            width:50vw;
+        }
+    }
+
+    .service-text{
+        width:50vw;
+        p{
+            word-wrap: break-word;
+        }
+    }
+
+    .right-align-content{
+        flex-direction: row-reverse;
+    }
+    
+    #soc-med{
+        gap:$medium-value;
+        img{
+            width:7vw;
+        }
+    }
+    
+    #footer-details{
+        flex-direction: row;
+        justify-content: center;
+        gap:$small-value;
+        margin:$small-value 0;
+        p{
+            word-wrap: break-word;
+        }
+    }
+    
+    .details{
+        width:28vw;
+    }
 }
