@@ -82,6 +82,40 @@ header {
   margin: 2rem;
 }
 #hero .img-container {
-  width: 90vw;
+  width: 80vw;
   height: 45vh;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 10rem 2rem;
+}
+#about p {
+  margin-top: 2rem;
+}
+
+#about-img {
+  position: relative;
+}
+#about-img .img-container {
+  height: 75vw;
+  width: 50vw;
+  padding: 2rem;
+}
+
+#about-img-dogs, #about-img-cats {
+  display: flex;
+}
+
+#about-img-cats {
+  flex-direction: row-reverse;
+}
+
+#asset {
+  position: absolute;
+  top: 50vw;
+  left: 20vw;
+  width: 45vw;
 }/*# sourceMappingURL=style.css.map */

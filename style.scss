@@ -98,7 +98,43 @@ header{
     }
 
     .img-container{
-        width:90vw;
+        width:80vw;
         height:45vh;
     }
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    gap:$medium-value;
+    margin: $extra-large-value $small-value;
+    
+    p{
+        margin-top: $small-value;
+    }
+}
+
+#about-img{
+    position: relative;
+    .img-container{
+        height:75vw;
+        width:50vw;
+        padding: $small-value;
+    }
+}
+
+
+#about-img-dogs, #about-img-cats{
+    display: flex;
+}
+
+#about-img-cats{
+    flex-direction: row-reverse;
+}
+
+#asset{
+    position: absolute;
+    top:50vw;
+    left:20vw;
+    width:45vw;
 }
