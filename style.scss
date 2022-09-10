@@ -30,6 +30,10 @@ body{
     background-color: $beige;
 }
 
+article{
+    display: flex;
+}
+
 h1,h2{
     font-family:$header-font;
     font-weight: 100; //reduce boldness
@@ -40,7 +44,7 @@ h1{
 }
 
 h2{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 p,a,button,input{
@@ -60,14 +64,31 @@ button,#message-submit{
 }
 
 .yellow-part, .yellow-btn{
-    border:3px solid $medium-yellow;
     background-color: $medium-yellow;
     color:$beige;
 }
 
-.yellow-btn:hover{
-    background-color: $beige;
+.yellow-btn{
+    border:3px solid $medium-yellow;
+    &:hover{
+        background-color: $beige;
     color:$medium-yellow;
+    }
+    
+}
+
+.green-part, .green-btn{
+    background-color: $dark-green;
+    color:$beige;
+}
+
+.green-btn{
+    border:3px solid $dark-green;
+    &:hover{
+        background-color: inherit;
+        color:$dark-green;
+    }
+    
 }
 
 .img-container{
@@ -87,7 +108,6 @@ header{
 }
 
 #hero{
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -104,7 +124,6 @@ header{
 }
 
 #about{
-    display: flex;
     flex-direction: column;
     gap:$medium-value;
     margin: $extra-large-value $small-value;
@@ -117,8 +136,8 @@ header{
 #about-img{
     position: relative;
     .img-container{
-        height:75vw;
-        width:50vw;
+        height:85vw;
+        width:55vw;
         padding: $small-value;
     }
 }
@@ -134,7 +153,27 @@ header{
 
 #asset{
     position: absolute;
-    top:50vw;
+    top:60vw;
     left:20vw;
     width:45vw;
+}
+
+#services{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        text-align: center;
+        margin-bottom: $medium-value;
+    }
+}
+
+.service-content{
+    .img-container{
+        height:50vh;
+    }
+}
+
+.service-text{
+    padding:$medium-value;
 }

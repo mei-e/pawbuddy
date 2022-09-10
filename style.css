@@ -16,6 +16,10 @@ body {
   background-color: #FFFFEE;
 }
 
+article {
+  display: flex;
+}
+
 h1, h2 {
   font-family: "Patsy Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
@@ -26,7 +30,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 p, a, button, input {
@@ -46,14 +50,29 @@ button, #message-submit {
 }
 
 .yellow-part, .yellow-btn {
-  border: 3px solid #E5B12B;
   background-color: #E5B12B;
   color: #FFFFEE;
 }
 
+.yellow-btn {
+  border: 3px solid #E5B12B;
+}
 .yellow-btn:hover {
   background-color: #FFFFEE;
   color: #E5B12B;
+}
+
+.green-part, .green-btn {
+  background-color: #384228;
+  color: #FFFFEE;
+}
+
+.green-btn {
+  border: 3px solid #384228;
+}
+.green-btn:hover {
+  background-color: inherit;
+  color: #384228;
 }
 
 .img-container img {
@@ -72,7 +91,6 @@ header {
 }
 
 #hero {
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -87,7 +105,6 @@ header {
 }
 
 #about {
-  display: flex;
   flex-direction: column;
   gap: 4rem;
   margin: 10rem 2rem;
@@ -100,8 +117,8 @@ header {
   position: relative;
 }
 #about-img .img-container {
-  height: 75vw;
-  width: 50vw;
+  height: 85vw;
+  width: 55vw;
   padding: 2rem;
 }
 
@@ -115,7 +132,25 @@ header {
 
 #asset {
   position: absolute;
-  top: 50vw;
+  top: 60vw;
   left: 20vw;
   width: 45vw;
+}
+
+#services {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#services h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.service-content .img-container {
+  height: 50vh;
+}
+
+.service-text {
+  padding: 4rem;
 }/*# sourceMappingURL=style.css.map */
