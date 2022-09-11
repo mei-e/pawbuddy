@@ -16,12 +16,12 @@
 
 </head>
 <body>
-    <main>
+    <main class="beige-part">
         <header>
             <a href="./index.html" target="_top"><img id="header-logo" src="./images/logo.svg" alt="logo"/></a>
         </header>
 
-        <article id="registration" class="beige-part">
+        <article id="registration">
             <h1>VOLUNTEER REGISTRATION FORM</h1>
             <form id="registration-form">
                 <label id="first-name-label">
@@ -45,9 +45,20 @@
                     <input id="address" type="text" name="address" placeholder="Bldg No. Street, City, Province" required>
                 </label>
 
-                <input id="submit" class="green-btn" type="submit" value="SUBMIT">
+                <input id="submit" class="green-btn" type="submit" value="SUBMIT" onclick="showModal()">
             </form>
         </article>
+
+        <div id="main-modal">
+            <div id="modal" class="beige-part">
+                <a id="close" href="#" onclick="closeModal()"><img id="close-icon" src="./images/close.svg" alt="close"/></a>
+                <img id="success-icon" src="./images/success.svg" alt="check"/>
+                <h1>REGISTRATION SUCCESSFUL</h1>
+                <p>You will be sent confirmation details in your e-mail for a few seconds.</p>
+                <p>Thank you and see you soon buddy!</p>
+                <p>If you still have not received anything, please screenshot this notice and send us an email or text mesage.</p>
+            </div>
+        </div>
 
         <footer class="yellow-part">
             <h1>REACH OUT TO US</h1>

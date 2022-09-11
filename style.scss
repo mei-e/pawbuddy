@@ -30,10 +30,6 @@ main{
     overflow-x: hidden;
 }
 
-body{
-    background-color: $beige;
-}
-
 article{
     display: flex;
 }
@@ -65,6 +61,7 @@ button,#submit{
 }
 
 .beige-part{
+    background-color: $beige;
     color:$dark-green;
 }
 
@@ -131,7 +128,7 @@ header{
 #about{
     flex-direction: column;
     gap:$medium-value;
-    margin: $extra-large-value $small-value $small-value;
+    margin: $extra-large-value $medium-value $small-value;
     
     p{
         margin-top: $small-value;
@@ -182,7 +179,7 @@ header{
 }
 
 .service-text{
-    padding:$large-value $medium-value;
+    padding:$extra-large-value $medium-value;
     p{
         margin-top: $extra-small-value;
     }
@@ -233,6 +230,47 @@ input{
     margin-top: $small-value;
 }
 
+#main-modal{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 1;
+    background-color: #38422859;
+    backdrop-filter: blur(50px);
+}
+
+#modal{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:$extra-small-value;
+    padding:$medium-value $extra-small-value;
+    margin:$large-value $extra-small-value;
+    border-radius: 2.5rem;
+    p:last-of-type{
+        color:$medium-yellow;
+    }
+}
+
+#success-icon{
+    width:15vw;
+}
+
+#close{
+    opacity: 0.65;
+    filter: invert(91%) sepia(22%) saturate(3886%) hue-rotate(339deg) brightness(96%) contrast(86%);
+    position: absolute;
+    top:0;
+    right:0;
+    margin:$extra-small-value;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -271,6 +309,8 @@ footer{
 
     }
 }
+
+//for larger screens (tablet and desktop)
 
 @media screen and (min-width:600px) {
     h1{
@@ -371,7 +411,19 @@ footer{
     #submit{
         margin-top: $medium-value;
     }
+
+    #main-modal{
+        padding: 0 $extra-large-value;
+    }
     
+    #modal{
+        padding:$medium-value;
+        margin:$medium-value;
+    }
+
+    #success-icon{
+        width:10vw;
+    }
 
     #soc-med{
         gap:$medium-value;

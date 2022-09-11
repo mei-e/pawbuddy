@@ -16,10 +16,6 @@ main {
   overflow-x: hidden;
 }
 
-body {
-  background-color: #FFFFEE;
-}
-
 article {
   display: flex;
 }
@@ -51,6 +47,7 @@ button, #submit {
 }
 
 .beige-part {
+  background-color: #FFFFEE;
   color: #384228;
 }
 
@@ -112,7 +109,7 @@ header {
 #about {
   flex-direction: column;
   gap: 4rem;
-  margin: 10rem 2rem 2rem;
+  margin: 10rem 4rem 2rem;
 }
 #about p {
   margin-top: 2rem;
@@ -159,7 +156,7 @@ header {
 }
 
 .service-text {
-  padding: 6rem 4rem;
+  padding: 10rem 4rem;
 }
 .service-text p {
   margin-top: 1rem;
@@ -208,6 +205,48 @@ input:not(#address) {
 #submit {
   margin: 0 auto;
   margin-top: 2rem;
+}
+
+#main-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(56, 66, 40, 0.3490196078);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+#modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 4rem 1rem;
+  margin: 6rem 1rem;
+  border-radius: 2.5rem;
+}
+#modal p:last-of-type {
+  color: #E5B12B;
+}
+
+#success-icon {
+  width: 15vw;
+}
+
+#close {
+  opacity: 0.65;
+  filter: invert(91%) sepia(22%) saturate(3886%) hue-rotate(339deg) brightness(96%) contrast(86%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
 }
 
 footer {
@@ -328,6 +367,16 @@ footer {
   }
   #submit {
     margin-top: 4rem;
+  }
+  #main-modal {
+    padding: 0 10rem;
+  }
+  #modal {
+    padding: 4rem;
+    margin: 4rem;
+  }
+  #success-icon {
+    width: 10vw;
   }
   #soc-med {
     gap: 4rem;
