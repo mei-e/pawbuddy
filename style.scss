@@ -26,6 +26,10 @@ html{
     font-size: 62.5% //10px=1rem;
 }
 
+main{
+    overflow-x: hidden;
+}
+
 body{
     background-color: $beige;
 }
@@ -37,6 +41,7 @@ article{
 h1,h2{
     font-family:$header-font;
     font-weight: 100; //reduce boldness
+    line-height: 0.85;
 }
 
 h1{
@@ -52,9 +57,9 @@ p,a,button,input{
     font-size: 1.6rem;
 }
 
-button,#message-submit{
+button,#submit{
     padding:$extra-small-value $small-value;
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     transition: 0.25s ease;
 }
@@ -183,6 +188,51 @@ header{
     }
 }
 
+#registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:$small-value;
+    margin:$medium-value;
+    h1{
+        text-align: center;
+    }
+}
+
+form{
+    background-color: #f8e1a6;
+    padding:$small-value;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-top: $extra-small-value;
+    }
+}
+
+input{
+    padding:$extra-small-value $small-value;
+    border: 3px solid $beige;
+    background-color: $beige;
+    border-radius: 1.5rem;
+    &:focus{
+        background-color: transparent;
+    }
+    &:not(#address){  
+        width:50vw;
+    }
+}
+
+#address{
+    width:70vw;
+}
+
+#submit{
+    margin:0 auto;
+    margin-top: $small-value;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -223,9 +273,6 @@ footer{
 }
 
 @media screen and (min-width:600px) {
-    h1,h2{
-        line-height: 0.85;
-    }
     h1{
         font-size: 6.4rem;
     }
@@ -280,7 +327,6 @@ footer{
     
 
     #services{
-        overflow: hidden;
         margin-top: $extra-large-value;
         h1{
             margin-bottom: $large-value;
@@ -306,7 +352,27 @@ footer{
     .right-align-content{
         flex-direction: row-reverse;
     }
+
+    form {
+        padding:$medium-value;
+        p{
+            margin-top: $small-value;
+        }
+    }
     
+    input:not(#address){  
+        width:30vw;
+    }
+    
+    #address{
+        width:50vw;
+    }
+
+    #submit{
+        margin-top: $medium-value;
+    }
+    
+
     #soc-med{
         gap:$medium-value;
         img{

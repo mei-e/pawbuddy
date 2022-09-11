@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pawbuddy is a volunteer-driven animal shelter in the Philippines.">
+    <meta name="keywords" content="volunteer, animal shelter, volunteer animal shelter, animal shelter Philippines, volunteer Philippines">
+    <title>Volunteer Registration | Pawbuddy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <header>
+            <a href="./index.html" target="_top"><img id="header-logo" src="./images/logo.svg" alt="logo"/></a>
+        </header>
+
+        <article id="registration" class="beige-part">
+            <h1>VOLUNTEER REGISTRATION FORM</h1>
+            <form id="registration-form">
+                <label id="first-name-label">
+                    <p>FIRST NAME</p>
+                    <input id="first-name" type="text" name="first-name" placeholder="Juan" required>
+                </label>
+                <label id="last-name-label">
+                    <p>LAST NAME</p>
+                    <input id="last-name" type="text" name="last-name" placeholder="Dela Cruz" required>
+                </label>
+                <label id="email-label">
+                    <p>E-MAIL</p>
+                    <input id="email" type="email" name="email" placeholder="example@email.com" required>
+                </label>
+                <label id="phone-no-label">
+                    <p>CELLPHONE NUMBER</p>
+                    <input id="phone-no" type="tel" name="phone-no" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0912-345-6789" required>
+                </label>
+                <label id="address-label">
+                    <p>ADDRESS</p>
+                    <input id="address" type="text" name="address" placeholder="Bldg No. Street, City, Province" required>
+                </label>
+
+                <input id="submit" class="green-btn" type="submit" value="SUBMIT">
+            </form>
+        </article>
+
+        <footer class="yellow-part">
+            <h1>REACH OUT TO US</h1>
+            <section id="soc-med">
+                <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.svg" alt="facebook"/></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="./images/twitter.svg" alt="twitter"/></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.svg" alt="instagram"/></a>
+            </section>
+            <section id="footer-details">
+                <div class="details">
+                    <h2>ADDRESS</h2>
+                    <p>Sunflower Building, Rose Street, Daisy City, Tulip</p>
+                </div>
+                <div class="details">
+                    <h2>PHONE NUMBER</h2>
+                    <p>0987-654-3210</p>
+                </div>
+                <div class="details">
+                    <h2>E-MAIL</h2>
+                    <p>pawbuddyph@gmail.com</p>
+                </div>
+            </section>
+            <section id="notes">
+                <p>*This is not a real organization. This is a sample front-end project meant for visualization purposes only.</p>
+                <p>Site by <a href="https://github.com/mei-e" target="_blank" rel="noreferrer">mei-e</a>.</p>
+            </section>
+        </footer>
+    </main>
+</body>
+</html>

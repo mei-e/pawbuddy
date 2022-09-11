@@ -12,6 +12,10 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #FFFFEE;
 }
@@ -23,6 +27,7 @@ article {
 h1, h2 {
   font-family: "Patsy Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
+  line-height: 0.85;
 }
 
 h1 {
@@ -38,9 +43,9 @@ p, a, button, input {
   font-size: 1.6rem;
 }
 
-button, #message-submit {
+button, #submit {
   padding: 1rem 2rem;
-  border-radius: 2.5rem;
+  border-radius: 1.5rem;
   cursor: pointer;
   transition: 0.25s ease;
 }
@@ -160,6 +165,51 @@ header {
   margin-top: 1rem;
 }
 
+#registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 4rem;
+}
+#registration h1 {
+  text-align: center;
+}
+
+form {
+  background-color: #f8e1a6;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+form p {
+  margin-top: 1rem;
+}
+
+input {
+  padding: 1rem 2rem;
+  border: 3px solid #FFFFEE;
+  background-color: #FFFFEE;
+  border-radius: 1.5rem;
+}
+input:focus {
+  background-color: transparent;
+}
+input:not(#address) {
+  width: 50vw;
+}
+
+#address {
+  width: 70vw;
+}
+
+#submit {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -199,9 +249,6 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  h1, h2 {
-    line-height: 0.85;
-  }
   h1 {
     font-size: 6.4rem;
   }
@@ -245,7 +292,6 @@ footer {
     width: 20vw;
   }
   #services {
-    overflow: hidden;
     margin-top: 10rem;
   }
   #services h1 {
@@ -267,6 +313,21 @@ footer {
   }
   .right-align-content {
     flex-direction: row-reverse;
+  }
+  form {
+    padding: 4rem;
+  }
+  form p {
+    margin-top: 2rem;
+  }
+  input:not(#address) {
+    width: 30vw;
+  }
+  #address {
+    width: 50vw;
+  }
+  #submit {
+    margin-top: 4rem;
   }
   #soc-med {
     gap: 4rem;
