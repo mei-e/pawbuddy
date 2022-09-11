@@ -37,7 +37,7 @@ article{
 h1,h2{
     font-family:$header-font;
     font-weight: 100; //reduce boldness
-    line-height: 0.85;
+    overflow: hidden;
 }
 
 h1{
@@ -101,6 +101,11 @@ button,#submit{
     }
 }
 
+.text-reveal{
+    display: inline-block;
+    transform: translateY((100%));
+}
+
 header{
     margin:$small-value;
 }
@@ -122,6 +127,9 @@ header{
     .img-container{
         width:80vw;
         height:45vh;
+        img{
+            transform: translateY((100%));
+        }
     }
 }
 
@@ -336,6 +344,7 @@ footer{
             margin-top: $medium-value;
             width:90vw;
             height:80vh;
+            overflow: hidden;
         }
     }
     
@@ -377,7 +386,7 @@ footer{
         display: flex;
         align-items: center;
         .img-container{
-            height:100vh;
+            height:120vh;
             width:50vw;
         }
     }

@@ -23,7 +23,7 @@ article {
 h1, h2 {
   font-family: "Patsy Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
-  line-height: 0.85;
+  overflow: hidden;
 }
 
 h1 {
@@ -84,6 +84,11 @@ button, #submit {
      object-fit: cover;
 }
 
+.text-reveal {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
 header {
   margin: 2rem;
 }
@@ -104,6 +109,9 @@ header {
 #hero .img-container {
   width: 80vw;
   height: 45vh;
+}
+#hero .img-container img {
+  transform: translateY(100%);
 }
 
 #about {
@@ -307,6 +315,7 @@ footer {
     margin-top: 4rem;
     width: 90vw;
     height: 80vh;
+    overflow: hidden;
   }
   #about {
     flex-direction: row;
@@ -341,7 +350,7 @@ footer {
     align-items: center;
   }
   .service-content .img-container {
-    height: 100vh;
+    height: 120vh;
     width: 50vw;
   }
   .service-text {

@@ -11,8 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script defer src="./script.js"></script>
+    
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./index.js"></script>
 
 </head>
 <body>
@@ -55,30 +58,30 @@
 
         <article id="services">
             <h1><span class="text-reveal">MAKING A DIFFERENCE</span></h1>
-            <section class="service-content">
+            <section id="adopt" class="service-content">
                 <div class="img-container">
                     <img src="./images/adoption.webp" alt="girl with brown dog"/>
                 </div>
                 <div class="service-text">
-                    <h2>ADOPTION</h2>
+                    <h2><span class="text-reveal">ADOPTION</span></h2>
                     <p>We provide free adoption that will help our furry friends have a new home. We also run evaluations for future pet owners first to see if they are capable of giving a safe and comfortable environment for their future buddies.</p>
                 </div>
             </section>
-            <section class="service-content green-part right-align-content">
+            <section id="animal-rescue" class="service-content green-part right-align-content">
                 <div class="img-container">
                     <img src="./images/animal-rescue.webp" alt="man with white dog"/>
                 </div>
                 <div class="service-text">
-                    <h2>ANIMAL RESCUES</h2>
+                    <h2><span class="text-reveal">ANIMAL RESCUES</span></h2>
                     <p>From strays to victims of abuse, we rescue animals in need and provide them the home and life that they deserve.</p>
                 </div>
             </section>
-            <section class="service-content">
+            <section id="vet" class="service-content">
                 <div class="img-container">
                     <img src="./images/vet.webp" alt="grey cat"/>
                 </div>
                 <div class="service-text">
-                    <h2>VETERINARY SERVICES</h2>
+                    <h2><span class="text-reveal">VETERINARY SERVICES</span></h2>
                     <p>We provide healthcare for our furry friends, including neutering and vaccinations.</p>
                 </div>
             </section>
