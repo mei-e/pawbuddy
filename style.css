@@ -39,6 +39,10 @@ p, a, button, input {
   font-size: 1.6rem;
 }
 
+p {
+  line-height: 1.75;
+}
+
 button, #submit {
   padding: 1rem 2rem;
   border-radius: 1.5rem;
@@ -239,6 +243,7 @@ input:not(#address) {
   padding: 4rem 1rem;
   margin: 6rem 1rem;
   border-radius: 2.5rem;
+  transform: translateY(100%);
 }
 #modal p:last-of-type {
   color: #E5B12B;
@@ -361,6 +366,7 @@ footer {
   }
   .right-align-content {
     flex-direction: row-reverse;
+    text-align: right;
   }
   form {
     padding: 4rem;

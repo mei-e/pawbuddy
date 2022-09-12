@@ -53,6 +53,10 @@ p,a,button,input{
     font-size: 1.6rem;
 }
 
+p{
+    line-height: 1.75;
+}
+
 button,#submit{
     padding:$extra-small-value $small-value;
     border-radius: 1.5rem;
@@ -261,6 +265,7 @@ input{
     padding:$medium-value $extra-small-value;
     margin:$large-value $extra-small-value;
     border-radius: 2.5rem;
+    transform: translateY((100%));
     p:last-of-type{
         color:$medium-yellow;
     }
@@ -400,6 +405,7 @@ footer{
 
     .right-align-content{
         flex-direction: row-reverse;
+        text-align: right;
     }
 
     form {
